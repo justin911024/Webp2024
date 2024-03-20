@@ -25,9 +25,11 @@
             }
 
             // 產生新的隨機字元並添加到容器中
+           if (str.length<5){
             for (let j = 0; j < getRandom(1, 3); j++) {
                 var key_up_num = Math.floor(Math.random() * characters.length);
                 container.textContent += characters.substring(key_up_num, key_up_num + 1);
             }
+        }
         });
     };
